@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>message us</title>
+</head>
+<body style="background-image: url(/pictures/light.jpg);">
+    <form  action="andex.php" method="POST" id="postMessage">
+        <h1 style="font-size: 30px; color: white; font-weight: bold; text-align: center; padding-top: 5%;">We would love to get feedback from you..</h1>
+        <textarea required name="fmessage" type="text" placeholder="Message here" id="message" style=" background-color: aliceblue; width: 90%; font-size: 100%; position: relative; height: 250px;  border-radius: 10px; border-color: rgb(0, 0, 0); border-width: 5px; margin-left: 1%; margin-top: 5%; resize: none; overflow: hidden;" ></textarea>
+        <input type="submit" class="btn" value="Submit" style="cursor: pointer; font-size: 25px; font-weight: bold; margin-left: 250px; margin-top: 10%; margin-bottom: 10px; background-color: green; color: white; border-radius: 4px; border-color: white;  ">
+</form>
+</body>
+<script>
+    window.reload = function() {
+        Swal.fire({
+            title: "Loading...",
+            text: "Message Us Today",
+            icon: "info",
+            allowOutsideClick: false,
+            position: 'top',
+            height: 200,
+            timer: 2000,
+            showConfirmButton: false
+        });
+    }
+
+    document.getElementById("postMessage").addEventListener("submit", function(event) {
+            // Prevent form submission
+            event.preventDefault();
+
+            // Show the message
+            swal.fire({
+            title:'Successfully submited',
+            text: 'Thank you for the feedback!',
+            icon: 'success',
+            timer: 2000
+            })
+
+            // Delay submission by 2 seconds
+            setTimeout(function() {
+                // Submit the form after delay
+                document.getElementById("postMessage").submit();
+            }, 2000); // 2000 milliseconds = 2 seconds
+        });
+
+</script>
+
+<style>
+    form{
+        height: auto; 
+        background-color:blueviolet; 
+        display: block; 
+        width: auto; 
+        margin-left: 500px;
+        margin-top: 5%; 
+        border-radius: 10px; 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        float: left;
+    }
+
+    #postMessage{
+        animation-duration: 0.5s;
+        animation-name: anim;
+    }
+    @keyframes anim{
+        0%{
+            opacity: 0;
+            border-radius: 50%;
+            scale: 0.2;
+        }
+        10%{
+            opacity: 0.5;
+        }
+        20%{
+            opacity: 1;
+        }
+        30%{
+            opacity: 0.5;
+        }
+        40%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        60%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 0.5;
+        }
+        80%{
+            opacity: 0;
+        }
+        90%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 768px) {
+        form{
+            margin: auto;
+            
+        }
+        .btn{
+            margin: 10px;
+            
+        }
+    }
+</style>
+</html> 

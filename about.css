@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+    background-image: url(/pictures/top1.png);
+    background-size: cover;
+    position: center;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: auto;
+    background-color: rgb(54, 53, 51);
+    display: none;
+    transition: ease-in;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: auto;
+    position: absolute;
+    opacity: 0.9;
+}
+
+nav ul{
+    text-align: center;
+    font-size: 25px;
+}
+
+nav ul li{
+    text-decoration: none;
+    gap: 5px;
+    margin-bottom: 15%;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul:hover{
+    color: blue;
+}
+
+
+#label{
+    font-size: 40px;
+    font-weight: bolder;
+    background: none;
+    position: sticky;
+    width: 7vh;
+    color: blanchedalmond;
+    position: absolute;
+    margin-top: 10px;
+    height: 30PX;
+    border-style: none;
+}
+
+#label:hover{
+    color: rgb(243, 0, 0);
+    transition: 1.5s;
+    text-shadow: 
+        10px 10px 15px 0 rgba(2, 180, 14, 0.5),  /* First outer shadow */
+        -10px -10px 10px 0 rgba(151, 2, 2, 0.3), /* Second outer shadow */
+        inset 5px 5px 10px rgba(2, 28, 180, 0.2); 
+     margin-left: 10px;
+    }
+
+.top{
+    width: 101%;
+    background-size: cover;
+    position: center;
+    margin-top: -3%;
+    margin-left: -7px;
+    margin-right: -20%;
+    box-sizing: content-box;
+    position: static;
+    height: auto;
+}
+
+.top p{
+    text-transform: uppercase;
+    color: orange;
+    font-family: Roboto Slab;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 3%;
+    }
+
+.top h3{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-family: Agdasima;
+}
+
+.join{
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 40rem;
+    margin-top: 2%;
+    padding: 10px;
+    font-family: Playfair Display;
+}
+
+.join:hover{
+    font-size: 28px;
+    transition: 1s;
+    background-color: rgb(5, 188, 5);
+    color: black;
+}
+
+.center{
+    display: flex;
+    margin-top: 2%;
+    width: auto;
+}
+
+.center .one{
+    width: 40EM;
+    background-color: rgb(23, 2, 178);
+    height: auto;
+    margin-left: 5%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 2s;
+}
+
+.one:hover{
+    border-color: linear-gradient(90deg, red, blue, green, yellow);
+    border-width: 10px;
+    transform: scale(1.005);
+    transition: 1s;
+}
+
+.center .two:hover{
+    border-width: 10px;
+    transform: scale(1.005);
+    transition: 1s;
+}
+   
+
+.one h1{
+    color: orange;
+    text-align: center;
+    font-family: elephant;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.center .two{
+    width: 40EM;
+    background-color: rgb(23, 2, 178);
+    height: auto;
+    margin-left: 5%;
+    position: relative;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 2s;
+}
+
+.two h1{
+    color: orange;
+    text-align: center;
+    font-family: elephant;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.p1{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}    
+
+
+.p2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    padding-top: 10%;
+    margin-top: -30px;
+}
+
+.two .wed,.two .sat,.two .sun{
+    font-size: 30px;
+    color: white;
+    font-family: Bodoni MT Condensed;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: bolder;
+    text-decoration: double;
+}
+.two #wed,.two #sat,.two #sun{
+    font-size: 21px;
+    color: rgb(255, 0, 217);
+    font-weight: bold;
+    text-align: center;
+    line-height: 150%;
+}
+
+.container{
+    display: flex;
+}
+
+.container .img1, .container .img2, .container .img3,  .container .img4{
+    margin: 1%;
+    width: auto;
+    background-color: grey;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container .img1:hover{
+    background-color: red;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.container .img2:hover{
+     background-color: red;
+     transform: scale(1.1);
+     transition: 1s;
+}
+.container .img3:hover{
+     background-color: red;
+     transform: scale(1.1);
+     transition: 1s;
+}
+.icon-bar a{
+    margin-right: 5%;
+    color: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    body{
+        height: 100%;
+        position: static;
+    }
+    .container{
+        display: block;
+    }
+    .container .img1, .container .img2, .container .img3,  .container .img4{
+        font-size: 15px;
+    }
+    .center{
+        display: block;
+    }
+}

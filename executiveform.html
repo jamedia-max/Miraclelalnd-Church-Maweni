@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Officlial login</title>
+</head>
+<body style="background-image: url(/pictures/light.jpg);"> 
+    <form action="link.php" method="post" style="height: 50vh; background-color: rgb(231, 206, 255); width: 25%; margin-top: 5%; margin-left: 37%; border-radius: 10px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); ">
+        <h1 style="margin-bottom: 10%; font-size: 30px; color: rgb(3, 41, 255); font-weight: bold; text-align: center; padding-top: 5%;"> Officials Login</h1>
+        <label for="name" style="font-weight: bold; color: rgb(35, 35, 35); margin-left: 5%; font-size: 18px; ">National ID</label><br>
+        <input type="text" inputmode="numeric" required id="idno" placeholder="Enter your National ID Number" name="id" style="border-radius: 5px; margin-bottom: 5%; margin-left: 5%; font-size: 17px; width: 20em; height: 2em; align-self: center; padding: 5px;"><br>
+        <label for="password" style="font-weight: bold; color: rgb(35, 35, 35); margin-left: 5%; font-size: 18px; ">Enter your password</label><br>
+        <input type="password" required id="pswd" placeholder="Enter your password" style=" border-radius: 5px; margin-left: 5%; font-size: 17px; width: 20em; height: 2em; align-self: center; "><br>
+        <p  style="margin-left: 10%; margin-top: -1.5px;color: blue; cursor: pointer; text-decoration: underline;" id="forgot">forgot password?</p><br>
+        <input value="Submit" type="submit" id="submitt" style="cursor: pointer; font-size: 25px; font-weight: bold; margin-left: 35%; margin-top: 10%; background-color: green; color: white; border-radius: 4px; border-color: white;  " >
+    </form>
+    
+</body>
+<script>
+    document.getElementById('submit')
+    document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('forgot').addEventListener('click', function() {
+        console.log('Forgot button clicked');
+        Swal.fire({
+            title: "Hello",
+            text: "Please contact the Administrator",
+            icon: "info",
+            allowOutsideClick: false,
+            position: 'top'
+        });
+    });
+}) 
+
+</script>
+<style>
+    *{
+        max-width: 100%;
+    }
+</style>
+
+</html>

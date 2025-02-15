@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="home.css">
+    <title>MIRACLELAND CHURCH MAWENI</title>
+</head>
+<body>
+    <SECTION id="cover">
+
+    
+    <nav>
+        <div class="logo"><img src="/pictures/Logo1.png" alt=""></div>
+        
+        <ul>
+            <li><a href="Home.html" title="This is Our homepage">Home</a></li>
+            <li><a href="about.html" title="About our church">AboutUs</a></li>
+            <li><a href="branch.html" title="Our church branches in Kenya">Our Branches</a></li>
+            <li><a href="contacts.html" title="Church contacts">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>        
+        <a href="/forms/executiveform.html" style="margin-top: 30%; color: white; background-color: brown; font-size: 25px; padding: 5px; margin-left: 93%; display: none;"> Officials</a>
+    </div> <br>
+
+    <section class="main">
+        <h1 class="title">Miracleland Church Ministry</h1>
+        <p class="one">Welcoming Community Of</p>
+        <p class="two">Faith, Love and Unity.</p>
+        <p class="three">"We embrace an inclusive community that honors the richness of human diversity, welcoming individuals of all ages, racial backgrounds, marital statuses, and gender identities."</p>
+        <button class="learn" onclick="learnmore()">Learn More About the church</button>
+        <p id="more">
+            At Miracleland Church, we believe in the power of community, faith, and love. Our vibrant congregation is dedicated to uplifting one another and making a positive impact in our community. Whether you're searching for spiritual growth, meaningful connections, or a place to serve, you’ll find a welcoming family here.
+        </p>
+        <button id="less" onclick="clear()">See less</button>
+        <div class="joinus">
+            <h1>Come Join Us and become our part today</h1>
+            <button id="joinus">Join Us</button>
+        </div>
+        <div class="mini">
+
+        </div>
+    </section>
+    <footer>
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@miraclelandchurch" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>
+        <p>
+            A church where love is more than a word
+        </p>
+        <h4>&copy Jamedia Tech Solutions. All rights reserved.</h4>
+    </footer>
+</SECTION>
+</body>
+<script>
+    function learnmore(){
+        let btn = document.getElementsByClassName('learn')[0];
+        let paragraph = document.getElementById('more');
+        let lesser = document.getElementById('less');
+        if(btn.style.display== 'block'){
+            paragraph.style.display = 'none';
+        }
+        else 
+        {
+            paragraph.style.display = 'block';
+            lesser.style.display = 'block';
+            btn.style.display ='none';
+        }
+    }
+
+    function clear(){
+        let btn = document.getElementsByClassName('learn')[0];
+        let paragraph = document.getElementById('more');
+        let lesser = document.getElementById('less');
+
+        if(lesser.style.display=='block')
+            paragraph.style.display = 'none';
+            lesser.style.display = 'none';
+            btn.style.display = 'block';
+    }
+</script>
+</html>

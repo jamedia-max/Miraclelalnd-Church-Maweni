@@ -1,0 +1,17 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Example: Redirect from old-page to new-page
+RewriteRule ^old-page$ new-page [L]
+
+# Allow both GET and POST methods
+<Limit GET POST>
+    order allow,deny
+    allow from all
+</Limit>
+
+# Disable directory listing
+Options -Indexes
+
+# Custom error pages
+ErrorDocument 404 /404.html
